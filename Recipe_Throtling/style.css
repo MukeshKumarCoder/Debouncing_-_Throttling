@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    /* width: 40%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    margin: 1rem auto;
+}
+
+.container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.container input {
+    width: 20%;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 1.5rem;
+    border: 3px solid black;
+}
+
+.root {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all ease 1s;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.card a{
+    display: inline-block;
+    background-color: #211f1f7c;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease-in;
+}
+
+.card a:hover{
+    background-color: #111010e1;
+}
+.recipeNotFound {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
